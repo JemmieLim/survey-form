@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Plei Gaming Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+        <input id="number" type="number" placeholder="Age" min=10 max=120 required>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown">
+            <option value="">Select your role / position</option>
+            <option value="1">Safelane</option>
+            <option value="2">Midlane</option>
+            <option value="3">Offlane</option>
+            <option value="4">Support</option>
+            <option value="5">Hard Support</option>
+            <option value="6">Prefer not to say</option>
+        </select>
+        <label>Would you recommend Plei Gaming to a friend?<label>
+        <label><input type="radio" name="recommend" value="definitely"/> Definitely</label>    
+        <label><input type="radio" name="recommend" value="yes"/> Yes</label>
+        <label><input type="radio" name="recommend" value="not-sure"/> Not Sure</label>  
+        <label>What is your signature of carry heroes in dota2 ? <span class="clue">(Check all that apply)<span></label>  
+        <label><input type="checkbox" name="checkbox-signature-heroes" value="slark">Slark</label>
+        <label><input type="checkbox" name="checkbox-signature-heroes" value="anti-mage">Anti-Mage</label>
+        <label><input type="checkbox" name="checkbox-signature-heroes" value="terrorblade">Terrorblade</label>
+        <label><input type="checkbox" name="checkbox-signature-heroes" value="troll-warlord">Troll Warlord</label>
+        <label><input type="checkbox" name="checkbox-signature-heroes" value="morphling">Morphling</label>
+        <label>Any comments or suggestions ?</label>
+        <textarea placeholder="Enter your comment here..."></textarea>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
